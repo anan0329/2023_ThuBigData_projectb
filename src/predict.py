@@ -75,8 +75,7 @@ def predict(test_dataloader, model):
 
 if __name__ == "__main__":
     
-    # TODO: 這邊要改
-    submission_file_path = "../projectB_ans.csv"
+    from configs import SUBMISSION_BASE_FILE_PATH
     
     # model 1
     model_path = model_pth["beitv2"]
@@ -152,7 +151,7 @@ if __name__ == "__main__":
 
     
     # merge to submissionfile
-    submission_df = pd.read_csv(submission_file_path)
+    submission_df = pd.read_csv(SUBMISSION_BASE_FILE_PATH)
     sub_df = submission_df.drop(columns=['label']).merge(test_df, on="image_name")
     print(sub_df)
 
