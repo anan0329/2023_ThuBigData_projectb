@@ -22,3 +22,7 @@ tree -L 2
 # ├─model # finetuned model dir
 # └─src
 ```
+
+## reminder
+
+The source of the data is provided by the competition's official orgaizers. This project only open-sources the related code.
