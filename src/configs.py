@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from model import TinyVGG, resnet_34, beitv2_224
 
 DEFAULT_RANDOM_SEED = 2023
+SUBMISSION_BASE_FILE_PATH = "../projectB_ans.csv"
+SUBMISSION_OUT_FILE_PATH = "../112925_projectB_ans.csv"
 
 @dataclass
 class DataConfigs:
