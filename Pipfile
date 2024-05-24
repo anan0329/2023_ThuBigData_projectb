@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch"
+
+[packages]
+torch = {version = "==2.3.0", index = "downloadpytorch"}
+torchvision = {version = "==0.18.0", index = "downloadpytorch"}
+timm = "*"
+pandas = "*"
+
+[dev-packages]
+tqdm = "*"
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.3"
