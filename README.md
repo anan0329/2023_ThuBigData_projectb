@@ -23,6 +23,13 @@ tree -L 2
 # └─src
 ```
 
+## execute steps
+
+1. check `src/configs.py`
+2. run `create/augmentation_data.py` if augmentation is needed.
+3. for training stage, run `src/create_ref_table.py` to prepare data split, then run `src/train.py` with specific arguments.
+4. for testing stage, run `src/validate.py` or `src/predict.py` based on whether labeled answers are available. 
+
 ## reminder
 
 The source of the data is provided by the competition's official orgaizers. This project only open-sources the related code.
