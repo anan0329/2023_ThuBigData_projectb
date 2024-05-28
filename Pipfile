@@ -28,6 +28,7 @@ torch = {version = "==2.3.0", index = "downloadpytorch"}
 torchvision = {version = "==0.18.0", index = "downloadpytorch"}
 timm = "*"
 pandas = "*"
+scikit-learn = "*"
 
 [dev-packages]
 tqdm = "*"
